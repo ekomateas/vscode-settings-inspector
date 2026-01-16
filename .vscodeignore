@@ -1,0 +1,17 @@
+# Exclude development files
+.vscode/
+.git/
+.gitignore
+tsconfig.json
+
+# Exclude source TypeScript
+src/
+
+# Exclude screenshots from the extension package
+images/screenshots/
+
+# Exclude node modules except production deps
+node_modules/
+
+# Exclude build artifacts
+*.map
