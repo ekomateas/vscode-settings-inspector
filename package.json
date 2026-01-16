@@ -1,0 +1,27 @@
+{
+  "name": "settings-inspector",
+  "displayName": "Settings Inspector",
+  "description": "Inspect the real resolved values of VS Code settings.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:settingsInspector.inspect"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "settingsInspector.inspect",
+        "title": "Settings Inspector: Inspect Setting"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
