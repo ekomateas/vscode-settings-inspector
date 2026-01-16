@@ -161,16 +161,22 @@ export function activate(context: vscode.ExtensionContext) {
             const { overrides, builtIn, extension } = getCategorizedSettings();
 
             const items: vscode.QuickPickItem[] = [
-                { label: 'Type a setting key…', description: 'Enter any setting manually' },
+                { label: '🔍 Type a setting key…', description: 'Enter any setting manually' },
 
-                { label: 'Language Overrides', kind: vscode.QuickPickItemKind.Separator },
-                ...overrides.map(k => ({ label: k })),
+                { label: '🌐 Language Overrides', kind: vscode.QuickPickItemKind.Separator },
+                ...overrides.map(k => ({
+                    label: k
+                })),
 
-                { label: 'Built‑in Settings', kind: vscode.QuickPickItemKind.Separator },
-                ...builtIn.map(k => ({ label: k })),
+                { label: '⚙️ Built‑in Settings', kind: vscode.QuickPickItemKind.Separator },
+                ...builtIn.map(k => ({
+                    label: k
+                })),
 
-                { label: 'Extension Settings', kind: vscode.QuickPickItemKind.Separator },
-                ...extension.map(k => ({ label: k }))
+                { label: '🧩 Extension Settings', kind: vscode.QuickPickItemKind.Separator },
+                ...extension.map(k => ({
+                    label: k
+                }))
             ];
 
             const picked = await vscode.window.showQuickPick(items, {
@@ -181,7 +187,7 @@ export function activate(context: vscode.ExtensionContext) {
 
             let setting: string | undefined;
 
-            if (picked.label === 'Type a setting key…') {
+            if (picked.label === '🔍 Type a setting key…') {
                 setting = await vscode.window.showInputBox({
                     prompt: 'Enter a setting key (e.g. editor.fontSize)',
                     placeHolder: 'editor.fontSize'
@@ -216,4 +222,4 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-export function deactivate() {}
+export function deactivate() { }

@@ -1,0 +1,54 @@
+<svg width="256" height="256" viewBox="0 0 256 256"
+     xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#111317"/>
+
+  <!-- Outer gear circle -->
+  <circle cx="128" cy="128" r="96"
+          fill="none"
+          stroke="#d4d4d4"
+          stroke-width="6"/>
+
+  <!-- Gear ticks (minimal teeth) -->
+  <g stroke="#d4d4d4" stroke-width="4" stroke-linecap="round">
+    <!-- 12 ticks around the circle -->
+    <line x1="128" y1="28"  x2="128" y2="40"/>
+    <line x1="176" y1="40"  x2="170" y2="52"/>
+    <line x1="212" y1="76"  x2="200" y2="84"/>
+    <line x1="228" y1="128" x2="216" y2="128"/>
+    <line x1="212" y1="180" x2="200" y2="172"/>
+    <line x1="176" y1="216" x2="170" y2="204"/>
+    <line x1="128" y1="228" x2="128" y2="216"/>
+    <line x1="80"  y1="216" x2="86"  y2="204"/>
+    <line x1="44"  y1="180" x2="56"  y2="172"/>
+    <line x1="28"  y1="128" x2="40"  y2="128"/>
+    <line x1="44"  y1="76"  x2="56"  y2="84"/>
+    <line x1="80"  y1="40"  x2="86"  y2="52"/>
+  </g>
+
+  <!-- Inner ring -->
+  <circle cx="128" cy="128" r="60"
+          fill="none"
+          stroke="#9cdcfe"
+          stroke-width="4"/>
+
+  <!-- Inner “gear” spokes -->
+  <g stroke="#9cdcfe" stroke-width="3" stroke-linecap="round">
+    <line x1="128" y1="68"  x2="128" y2="188"/>
+    <line x1="68"  y1="128" x2="188" y2="128"/>
+    <line x1="92"  y1="92"  x2="164" y2="164"/>
+    <line x1="92"  y1="164" x2="164" y2="92"/>
+  </g>
+
+  <!-- Center hub -->
+  <circle cx="128" cy="128" r="10"
+          fill="#111317"
+          stroke="#9cdcfe"
+          stroke-width="3"/>
+
+  <!-- Inspector pointer (like a measuring arm) -->
+  <g stroke="#c586c0" stroke-width="4" stroke-linecap="round">
+    <line x1="128" y1="128" x2="196" y2="104"/>
+    <circle cx="196" cy="104" r="6" fill="#c586c0"/>
+  </g>
+</svg>
