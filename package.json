@@ -2,7 +2,7 @@
   "name": "settings-inspector",
   "displayName": "Settings Inspector",
   "description": "A minimal, truthful inspector that reveals the real resolved values of any VS Code setting.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ekomateas",
   "engines": {
     "vscode": "^1.70.0"
